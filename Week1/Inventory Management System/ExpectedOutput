@@ -1,0 +1,8 @@
+ Product added: Product {ID=101, Name='Laptop', Quantity=10, Price=75000.0}
+ Product added: Product {ID=102, Name='Smartphone', Quantity=25, Price=25000.0}
+ Product added: Product {ID=103, Name='Headphones', Quantity=40, Price=1500.0}
+ Product updated: Product {ID=102, Name='Smartphone', Quantity=20, Price=24000.0}
+ Product removed: Product {ID=103, Name='Headphones', Quantity=40, Price=1500.0}
+ Current Inventory:
+Product {ID=101, Name='Laptop', Quantity=10, Price=75000.0}
+Product {ID=102, Name='Smartphone', Quantity=20, Price=24000.0}
