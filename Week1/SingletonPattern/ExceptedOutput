@@ -1,0 +1,4 @@
+Logger initialized.
+Log message: First message
+Log message: Second message
+Both logger instances are the same. Singleton works!
