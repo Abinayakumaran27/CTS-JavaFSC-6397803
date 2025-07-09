@@ -1,0 +1,40 @@
+Spring Data JPA style means writing very minimal code to interact with the database by using ready-made repository interfaces provided by Spring. You don’t need to write SQL or manage connections, transactions, or sessions manually.
+
+✨ It’s all about:
+Less code ✅
+
+More readability ✅
+
+Built-in query methods ✅
+
+Auto-handled transactions ✅
+
+Easy integration with Spring Boot ✅
+
+🧑‍💻 Example of Spring Data JPA Style
+1. Entity class (Employee.java)
+
+@Entity
+public class Employee {
+    @Id
+    private int id;
+    private String name;
+    // getters and setters
+}
+2. Repository Interface
+
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+}
+3. Service Class
+
+@Service
+public class EmployeeService {
+
+    @Autowired
+    private EmployeeRepository employeeRepository;
+
+    @Transactional
+    public void addEmployee(Employee employee) {
+        employeeRepository.save(employee);  // No session, no query, just save!
+    }
+}
