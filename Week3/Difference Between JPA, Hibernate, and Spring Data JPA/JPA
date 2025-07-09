@@ -1,0 +1,5 @@
+JPA is just a set of rules on how to do persistence in Java. Think of it as a contract.
+
+Hibernate is a tool that implements JPA and provides extra features like caching, lazy loading, etc.
+
+Spring Data JPA is a Spring-based abstraction over JPA/Hibernate that makes database operations super easy by just extending interfaces like JpaRepository.
